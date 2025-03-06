@@ -2,7 +2,7 @@
 variable "region" {
   type        = string
   description = "(Optional) AWS Region to deploy in. Defaults to us-east-1."
-  default     = "us-east-1"
+  default     = "us-west-2"
 }
 
 variable "prefix" {
@@ -35,6 +35,11 @@ variable "instance_type" {
 variable "api_key" {
   type        = string
   description = "(Required) API key for web app to talk to SaaS platform."
+}
+
+variable "playbook_repository" {
+  type        = string
+  description = "(Required) URI of Ansible play"
 }
 
 variable "tfe_organization" {
