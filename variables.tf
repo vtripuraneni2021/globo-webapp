@@ -47,7 +47,6 @@ variable "ec2_role_name" {
   description = "(Required) Name of role to associate with EC2 instance profile."
 }
 
-# TFC variables
 variable "tfe_organization" {
   type        = string
   description = "(Required) Name of TFC organization."
